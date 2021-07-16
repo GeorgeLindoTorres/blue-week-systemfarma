@@ -30,7 +30,73 @@ html {
     background: linear-gradient(148.88deg, #0A4595 28.15%, #000307 78.06%);
     width: 100%;
     height: 900px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
 }
+
+.conteudo-chamada{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.conteudo-chamada p{
+    color: white;
+    font-size: 32px;
+    line-height: 37px;    
+}
+.conteudo-chamada img{
+    width: 500px;
+    padding-left: 3.5rem;
+}
+
+.texto-chamada{
+    padding: 0 1rem 0 5rem;
+}
+
+.cadastro{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 7rem 9.5rem 2rem;   
+}
+
+.cadastro h1, label{
+    color: white;
+    font-size: 32px;
+    line-height: 37px;
+    margin-top: 2rem;
+}
+
+.cadastro h1{
+    text-align: center;
+    padding: 1rem;
+}
+
+.cadastro input{
+    width: 100%;
+    height: 62px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 1rem;
+}
+
+#btn-cadastro{
+    background: #F36F21;
+    border-radius: 10px;
+    color: white;
+    font-size: 32px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 2rem;
+}
+
 
 .footer-lp{
     width: 100%;
@@ -46,3 +112,4 @@ html {
     line-height: 35px;
     color: #000307;
 }
+
