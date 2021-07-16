@@ -25,3 +25,24 @@ html {
     margin: auto;
     font-size: 32px;
 }
+
+.container-conteudo{
+    background: linear-gradient(148.88deg, #0A4595 28.15%, #000307 78.06%);
+    width: 100%;
+    height: 900px;
+}
+
+.footer-lp{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-lp p{
+    font-size: 18px;
+    line-height: 35px;
+    color: #000307;
+}
