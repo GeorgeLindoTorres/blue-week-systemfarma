@@ -21,11 +21,13 @@
         </div>
         <div class="cadastro">
             <h1>Cadastre-se para ficar por dentro de todas as promoções do lançamento!</h1>
-            <label for="">Nome</label>
-            <input type="text">
-            <label for="">E-mail</label>
-            <input type="text" >
-            <input id="btn-cadastro" type="button" value="CADASTRAR">
+            <form>                
+                <label class="label" for="nome">Nome</label>
+                <input id="nome" type="text" value="">
+                <label class="label" for="email">E-mail</label>
+                <input id="email" type="text" value="">
+                <input id="btn-cadastro" type="button" value="CADASTRAR" onclick="cadastrar()">
+            </form>
         </div>
         
     </section>
@@ -34,6 +36,7 @@
         <p>Desenvolvido por George Torres</p>
         <p>Desafio Hiring Coders #2</p>
     </footer>
-    
+    <script src="./js/script.js"></script>
 </body>
+
 </html>
