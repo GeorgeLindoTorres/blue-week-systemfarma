@@ -148,3 +148,36 @@ html {
     }
     
 }
+
+@media only screen and (max-width: 840px) {
+    .texto-chamada ,.conteudo-chamada, .cadastro{
+        padding: 0;
+        text-align: center;
+        width: 94%
+    }
+    .nav-lp img {
+        width: 120%;
+        position: absolute;
+        object-position: -68px;
+    }
+    .nav-lp p{
+        display: none;
+    }
+    .conteudo-chamada img{
+        width: 100%;
+        padding-left: 3.5rem;
+        transition: width 2s;   
+    }
+    
+    .container-conteudo img:hover{
+        width: 110%;
+        transition: width 2s;
+    }
+
+    .conteudo-chamada p {
+        font-size: 1.5rem;
+    
+    }
+
+}
+
