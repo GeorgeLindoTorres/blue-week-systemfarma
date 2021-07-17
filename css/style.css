@@ -14,7 +14,7 @@ html {
     display: flex;
 }
 
-.nav-lp img {
+.logo-desktop {
     width: 580px;
     height: 215px;
 }
@@ -61,7 +61,7 @@ html {
 }
 
 .texto-chamada{
-    padding: 0 1rem 0 5rem;
+    padding-left: 4.5rem;
 }
 
 .cadastro{
@@ -111,11 +111,14 @@ html {
     color: #FFFFFF;
     margin-top: 2rem;
     cursor: pointer;
+    transition: 2s;
 }
 
 #btn-cadastro:hover{
-    scale: 2rem;
-    transition: width 2s;
+    background-color:#ff0000;
+    color: #fff;
+    font-size: 2.1rem;
+    transition: 2s;
 }
 
 .footer-lp{
@@ -133,6 +136,10 @@ html {
     color: #000307;
 }
 
+.logo-mobile{
+    display: none;
+}
+
 @media only screen and (max-width: 1100px) {
 .container-conteudo{
     flex-direction: column;
@@ -143,22 +150,22 @@ html {
     }
     .texto-chamada ,.conteudo-chamada, .cadastro{
         padding: 0;
-        text-align: center;
+        text-align: left;
         width: 70%
     }
-    
+    .texto-chamada{
+        text-align: center !important;
+    }
 }
 
 @media only screen and (max-width: 840px) {
     .texto-chamada ,.conteudo-chamada, .cadastro{
         padding: 0;
-        text-align: center;
+        text-align: left;
         width: 94%
     }
-    .nav-lp img {
-        width: 120%;
-        position: absolute;
-        object-position: -68px;
+    .logo-desktop  {
+        display: none;
     }
     .nav-lp p{
         display: none;
@@ -179,5 +186,25 @@ html {
     
     }
 
+    .logo-mobile{
+        display: block;
+        width: 200px;
+        margin: auto;
+    }
+
+    .nav-lp {
+        background-color: rgb(255 255 255);
+        height: 172px;       
+    }
+
+    .container-conteudo {        
+        padding-top: 3rem;         
+    }
+
+    .conteudo-chamada img, .container-conteudo img:hover {
+        width: 90%;
+        padding-left: 1.7rem;
+    }
+    
 }
 
