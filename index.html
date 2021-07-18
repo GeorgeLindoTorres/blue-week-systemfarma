@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Novo E-commerce System Farma</title>    
+    <link rel="stylesheet" href="./css/style.css">    
+    <title>Blue Week System Farma</title>    
 </head>
 <body>
     <section class="nav-lp">
         <img class="logo-desktop" src="./assets/logo-system-2.png" alt="logo da System Farma">
-        <img class="logo-mobile" src="./assets/LOGO SYSTEM sem frase.png" alt="Logo da System Farma">
+        <img class="logo-mobile" src="./assets/logo system.png" alt="Logo da System Farma">
         <p>BENEFÍCIOS PARA TODOS</p>
     </section>
     <section class="container-conteudo">
@@ -24,18 +24,26 @@
             <h1>Cadastre-se para ficar por dentro de todas as promoções do lançamento!</h1>
             <form>                
                 <label class="label" for="nome">Nome</label>
-                <input id="nome" type="text" value="">
+                <input id="nome" type="text" value="" required onfocus="this.value=''">
                 <label class="label" for="email">E-mail</label>
-                <input id="email" type="text" value="">
+                <input id="email" type="email" value="" required onfocus="this.value=''">
                 <input id="btn-cadastro" type="button" value="CADASTRAR" onclick="cadastrar()">
             </form>
-        </div>
-        
+        </div>            
+            <div id="myModal" class="modal">            
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal-content--texto">
+                <p>Seu e-mail foi cadastrado com sucesso!</p>
+                <a class="link-site" href="http://www.systemfarma.com.br">ACESSE NOSSO SITE</a>
+                </div>                
+            </div>
+            </div>        
     </section>
 
     <footer class="footer-lp">
-        <p>Desenvolvido por George Torres</p>
-        <p>Desafio Hiring Coders #2</p>
+        <p>Desenvolvido por <a class="link-footer" href="https://api.whatsapp.com/send/?phone=5515996208870&text&app_absent=0">George Torres</a></p>
+        <p>Desafio Hiring Coders #2</p>        
     </footer>
     <script src="./js/script.js"></script>
 </body>
