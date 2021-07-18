@@ -10,9 +10,10 @@ localStorage.clear()
 const recuperaDados = () =>{
   if(localStorage !== ""){
     let leadLocal = (localStorage.getItem('Lead'));
-    leads.push(JSON.parse(leadLocal));
+    leads.push(...JSON.parse(leadLocal));
   };
 } 
+
 
 function cadastrar() {   
     recuperaDados();   
