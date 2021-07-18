@@ -1,6 +1,8 @@
 const botao = document.getElementById('btn-cadastro');
 const nome = document.getElementById('nome');
 const email = document.getElementById('email');
+const modal = document.getElementById("myModal");
+const span = document.getElementsByClassName("close")[0];
 
 function cadastrar(e) {
     let nomeLp = nome.value;
@@ -17,7 +19,18 @@ function cadastrar(e) {
         localStorage.setItem('Email', lead.email);
         nome.value = "";
         email.value = "";
-    }
+        modal.style.display = "block";
         
+    }       
     
 };
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
