@@ -3,7 +3,7 @@ const nome = document.getElementById('nome');
 const email = document.getElementById('email');
 const modal = document.getElementById("myModal");
 const span = document.getElementsByClassName("close")[0];
-const leads = [];
+const leads = [{nome:'George Lindo Torres', email:'georgelindotorres@gmail.com'}];
 
 const recuperaDados = () =>{
   if(localStorage !== ""){
