@@ -22,12 +22,12 @@
         </div>
         <div class="cadastro">
             <h1>Cadastre-se para ficar por dentro de todas as promoções do lançamento!</h1>
-            <form>                
+            <form action="envia.php" method="post" name="form">                
                 <label class="label" for="nome">Nome</label>
                 <input id="nome" type="text" value="" required onfocus="this.value=''">
                 <label class="label" for="email">E-mail</label>
                 <input id="email" type="email" value="" required onfocus="this.value=''">
-                <input id="btn-cadastro" type="button" value="CADASTRAR" onclick="cadastrar()">
+                <input id="btn-cadastro" type="submit" name="submit"  value="CADASTRAR" onclick="cadastrar()">
             </form>
         </div>            
             <div id="myModal" class="modal">            
