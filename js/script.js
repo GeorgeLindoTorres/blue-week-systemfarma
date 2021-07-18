@@ -14,9 +14,9 @@ const recuperaDados = () =>{
   };
 } 
 
+recuperaDados();  
 
-function cadastrar() {   
-    recuperaDados();   
+function cadastrar() {        
     let nomeLp = nome.value;
     let emailLp = email.value;
     if(emailLp == "" || nomeLp == "" || nomeLp == "Preencha seu nome" || emailLp == "Preencha seu nome" ){
