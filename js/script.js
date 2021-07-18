@@ -14,8 +14,6 @@ const recuperaDados = () =>{
   };
 } 
 
-recuperaDados();  
-
 function cadastrar() {        
     let nomeLp = nome.value;
     let emailLp = email.value;
@@ -45,3 +43,5 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+recuperaDados();
