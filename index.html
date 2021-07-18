@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,20 +14,20 @@
         <p>BENEFÍCIOS PARA TODOS</p>
     </section>
     <section class="container-conteudo">
-        <div class="conteudo-chamada">
+        <div class="container-conteudo--chamada">
             <p>Prepare-se! Está chegando a</p>
             <img src="./assets/blue-week.svg" alt="Logo da Blue Week">
-            <p class="texto-chamada">A grande semana da inauguração do novo E-commerce da System Farma. Compre com seu cartão convênio e pague em até 5X sem juros.</p>
+            <p class="container-texto--chamada">A grande semana da inauguração do novo E-commerce da System Farma. Compre com seu cartão convênio e pague em até 5X sem juros.</p>
 
         </div>
-        <div class="cadastro">
+        <div class="container-cadastro">
             <h1>Cadastre-se para ficar por dentro de todas as promoções do lançamento!</h1>
-            <form action="envia.php" method="post" name="form">                
-                <label class="label" for="nome">Nome</label>
-                <input id="nome" type="text" value="" required onfocus="this.value=''">
-                <label class="label" for="email">E-mail</label>
-                <input id="email" type="email" value="" required onfocus="this.value=''">
-                <input id="btn-cadastro" type="submit" name="submit"  value="CADASTRAR" onclick="cadastrar()">
+            <form>                
+                <label class="container-cadastro--label" for="nome">Nome</label>
+                <input id="nome" type="text" value="" onfocus="this.value=''">
+                <label class="container-cadastro--label" for="email">E-mail</label>
+                <input id="email" type="email" value="" onfocus="this.value=''">
+                <input id="btn-cadastro" type="button" value="CADASTRAR" onclick="cadastrar()">
             </form>
         </div>            
             <div id="myModal" class="modal">            
@@ -35,14 +35,14 @@
                 <span class="close">&times;</span>
                 <div class="modal-content--texto">
                 <p>Seu e-mail foi cadastrado com sucesso!</p>
-                <a class="link-site" href="http://www.systemfarma.com.br">ACESSE NOSSO SITE</a>
+                <a class="modal-content--link" href="http://www.systemfarma.com.br">ACESSE NOSSO SITE</a>
                 </div>                
             </div>
             </div>        
     </section>
 
     <footer class="footer-lp">
-        <p>Desenvolvido por <a class="link-footer" href="https://api.whatsapp.com/send/?phone=5515996208870&text&app_absent=0">George Torres</a></p>
+        <p>Desenvolvido por <a class="footer-lp--link" href="https://api.whatsapp.com/send/?phone=5515996208870&text&app_absent=0">George Torres</a></p>
         <p>Desafio Hiring Coders #2</p>        
     </footer>
     <script src="./js/script.js"></script>

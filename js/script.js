@@ -3,8 +3,17 @@ const nome = document.getElementById('nome');
 const email = document.getElementById('email');
 const modal = document.getElementById("myModal");
 const span = document.getElementsByClassName("close")[0];
+const leads = [];
 
-function cadastrar(e) {
+const recuperaDados = () =>{
+  if(localStorage !== ""){
+    let leadLocal = (localStorage.getItem('Lead'));
+    leads.push(...JSON.parse(leadLocal));
+  };
+} 
+
+function cadastrar() {   
+    recuperaDados();   
     let nomeLp = nome.value;
     let emailLp = email.value;
     if(emailLp == "" || nomeLp == "" || nomeLp == "Preencha seu nome" || emailLp == "Preencha seu nome" ){
@@ -15,12 +24,11 @@ function cadastrar(e) {
             nome: nomeLp,
             email: emailLp,
         }
-        localStorage.setItem('Nome', lead.nome);
-        localStorage.setItem('Email', lead.email);
+        leads.push(lead);
+        localStorage.setItem('Lead', JSON.stringify(leads));        
         nome.value = "";
         email.value = "";
-        modal.style.display = "block";
-        
+        modal.style.display = "block";          
     }       
     
 };
