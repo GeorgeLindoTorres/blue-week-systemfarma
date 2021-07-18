@@ -5,8 +5,6 @@ const modal = document.getElementById("myModal");
 const span = document.getElementsByClassName("close")[0];
 const leads = [];
 
-localStorage.clear()
-
 const recuperaDados = () =>{
   if(localStorage !== ""){
     let leadLocal = (localStorage.getItem('Lead'));
