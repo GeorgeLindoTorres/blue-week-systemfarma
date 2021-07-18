@@ -8,7 +8,7 @@ const leads = [{nome:'George Lindo Torres', email:'georgelindotorres@gmail.com'}
 const recuperaDados = () =>{
   if(localStorage !== ""){
     let leadLocal = (localStorage.getItem('Lead'));
-    leads.push(...JSON.parse(leadLocal));
+    leads.push(JSON.parse(...leadLocal));
   };
 } 
 
